@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Div </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            position: relative;
+
+            /* 2nd Method using Flex */
+            
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            /* 3rd Method using Grids */
+            display: grid;
+            place-items: center;
+
+            /* 4th Method */
+            /* display: grid;
+            justify-content: center;
+            align-items: center; */
+        }
+        .chield{
+            width: 450px;
+            height: 300px;
+            background-color: blueviolet;
+            position: absolute;
+
+            /* 1st Method */
+            /* top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+            
+            color: white;
+            font-weight: bold;
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="chield">Smile😊</div>
+</body>
+</html
