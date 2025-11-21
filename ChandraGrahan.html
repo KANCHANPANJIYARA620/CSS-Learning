@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandra Grahan</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            aspect-ratio: 1; 
+            background-color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .universe{
+            width: 50vw;
+            aspect-ratio: 1;
+            background-color: aqua;
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            justify-content:center;
+            align-items: center;  
+
+            animation: universecolor 10s linear infinite;
+        }
+        @keyframes universecolor{
+            0%{
+                background-color: rgb(232, 239, 17);
+            }
+            50%{
+                background-color: black;
+            }
+            100%{
+                background-color: rgb(227, 245, 24);
+            }
+        }
+        .chield{
+            width: 25vw;
+            aspect-ratio: 1;
+            background-color: orange;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+
+
+            &::after{
+                content: "";
+                position: absolute;
+                background-color: black;
+                width: 25vw;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                animation: moonwalk 10s ease-in-out infinite ;
+            }
+        }
+        @keyframes moonwalk{
+            0%{
+                translate: 100%;
+                scale: 1;
+            }
+            50%{
+                translate: 0%;
+                scale: 0.98 ;
+            }
+            100%{
+                translate: -100%;
+                scale: 0.98;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="universe">
+        <div class="chield"></div>
+
+    </div>
+</body>
+</html>
