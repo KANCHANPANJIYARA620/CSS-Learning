@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            color: white;
+            background-color: black;
+            display: grid;
+            place-items: center;
+        }
+        h1{
+            font-size: 150px;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+        }
+        h1::before{
+            top: 0;
+            left: 0;
+            font-size: 150px;
+            content: "Smile...";
+            width: 100%;
+            color: yellow;
+            position: absolute;
+            overflow: hidden;
+            border-right: 2px solid yellow;
+            animation: transfer 3s linear infinite;
+        }
+        @keyframes transfer{
+            0%{
+                width: 0%;
+            }
+            50%{
+                width: 100%;
+            }
+            100%{
+                width: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Smile...</h1>
+</body>
+</html>
