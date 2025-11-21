@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raining</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 500px;
+            height: auto;
+            background-image:url("img/road.avif") ;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .rain{
+            margin: 0;
+            width: 1500px;
+            height: 900px;
+            background-image: url("img/rain.png");
+            animation: raining 1s linear infinite ;
+        }
+        @keyframes raining{
+            0%{
+                background-position: 0% 0%;
+            }
+            100%{
+                background-position: 0% 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rain"></div>
+</body>
+</html>
