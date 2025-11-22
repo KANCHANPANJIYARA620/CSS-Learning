@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousal</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 50vw;
+            height: 50vh;
+            border: 5px solid red;
+            position: relative;
+            top: 0;
+            left: 0;
+            background-image: url("img/natureimg1.jpg");
+            background-size: cover;
+            background-position: center;
+
+            animation: nature 10s ease-out infinite ;
+        }
+           @keyframes nature{
+            0%{
+                background-image: url("img/natureimg1.jpg");
+            }
+            25%{
+                background-image: url(" img/natureimg3.jpg");
+            }
+            50%{
+                background: url("img/natureimg4.jpg");
+                background-position: cover;
+            }
+            75%{
+                background-image: url("img/natureimg2.jpg");
+
+            }100%{
+                background-image: url("img/natureimg3.jpg");
+            }
+        }  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="containerinner"></div>
+    </div>
+</body>
+</html>
+
